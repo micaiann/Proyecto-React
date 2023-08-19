@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -16,8 +17,32 @@ const index = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      
       <main>
-        
+
+        {/* NAVBAR */}
+        <div className={styles.navbar}></div>
+
+        {/* HOME */}
+        <div className={styles.home}></div>
+
+        {/* NEWS */}
+        <div className={styles.news}></div>
+
+        {/* CATEGORIES */}
+        <div className={styles.categories}></div>
+
+        {/* INFORMATION */}
+        <div className={styles.information}></div>
+
+        {/* IMAGES */}
+        <div className={styles.images}></div>
+
+        {/* FOOTER */}
+        <div className={styles.footer}></div>
+
+      
       </main>
     </>
   )
