@@ -1,24 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300;500&display=swap');
-
-
-
 :root {
-  
-  /****Colores****/
-
-  --first-color:#d8baf0;
-  --second-color: #A4C4BF;
-  --second-color:#9CA5A6;
-  --third-color:#F85ABB;
-  --white-color:#ebe5e9;
-  --grey-color:#b4c3ca;
-
-  /***Fuentes**/
-  --first-font:'Mukta', sans-serif;
-}
-
-
-/******  --max-width: 1100px;
+  --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -98,13 +79,13 @@
   margin: 0;
 }
 
-/* html,
+html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-} */
+}
 
-/* body {
+body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -123,5 +104,4 @@ a {
   html {
     color-scheme: dark;
   }
-} */
-
+}
