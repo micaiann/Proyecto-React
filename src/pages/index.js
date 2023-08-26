@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import BeneficiosSection from '@/components/organisms/BeneficiosSection'
+import Navbar from '@/components/molecules/Navbar'
+ 
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +24,7 @@ const index = () => {
       <main>
 
         {/* NAVBAR */}
-        <div className={styles.navbar}></div>
+        <Navbar/>
 
         {/* HOME */}
         <div className={styles.home}></div>
