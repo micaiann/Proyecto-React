@@ -7,8 +7,7 @@ const Beneficios = ({data}) => {
     const {icono, titulo, texto} = data;
 
    const estilosBeneficios = {
-       // A MODIFICARSE
-        width: "300px", //A MODIFICARSE
+       width: "300px", 
        backgroundColor: "#d8baf0",
        padding: "1rem",
        borderBox: "1px solid #d8baf0"
