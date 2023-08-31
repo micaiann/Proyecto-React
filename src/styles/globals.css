@@ -124,3 +124,93 @@ a {
   }
 } */
 
+/* FORM FOOTER */
+
+/* INPUT */
+.formulario {
+  width: 100% ;
+  height: 70px;
+  position: relative;
+  overflow: hidden;
+  max-width: 200px;
+}
+
+.formulario .input-email {
+  width: 100%;
+  height: 100%;
+  background:none;
+  color: black;
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+
+}
+
+.formulario .lbl-nombre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events :none;
+  border-bottom: 1px solid black;
+}
+
+.formulario .lbl-nombre:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 100%;
+  border-bottom: 3px solid var(--third-color);
+  transition: all 0.3s ease;
+  transform: translateX(-100%);
+}
+
+.lbl-texto {
+  position: absolute;
+  bottom: 5px;
+  left:0;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.formulario .input-email:focus + .lbl-nombre .lbl-texto, 
+.formulario .input-email:valid + .lbl-nombre .lbl-texto{
+  transform:  translateY(-150%);
+  font-size: 15px;
+  color: var(--second-color);
+}
+
+.formulario .input-email:focus + .lbl-nombre:after,
+.formulario .input-email:valid + .lbl-nombre:after{
+  transform: translateX(0%);
+}
+
+/* BUTTON */
+
+.boton-pie {
+  background-color: transparent;
+  font-weight: semibold ;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: 2px solid var(--white-color);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: .5rem .5rem 1rem var(--third-color),
+  -.5rem -.5rem 1rem #fff
+
+}
+
+.boton-pie:hover {
+  box-shadow: .5rem .5rem 1rem #fff,
+  -.5rem -.5rem 1rem var(--third-color)
+}
+
+.boton-pie:active {
+  box-shadow: inset .2rem .2rem 1rem #fff,
+  inset -.2rem -.2rem 1rem var(--third-color)
+}

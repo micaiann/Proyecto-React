@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Footer from '@/components/molecules/Footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -38,11 +39,10 @@ const index = () => {
 
         {/* IMAGES */}
         <div className={styles.images}></div>
-
+        
         {/* FOOTER */}
-        <div className={styles.footer}></div>
+        <div><Footer/></div>
 
-      
       </main>
     </>
   )
