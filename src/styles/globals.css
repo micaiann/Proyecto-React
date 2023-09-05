@@ -124,69 +124,73 @@ a {
   }
 } */
 
+
+
+/* FOOTER */
+
 /* FORM FOOTER */
 
 /* INPUT */
-.formulario {
-  width: 100% ;
-  height: 70px;
+
+.input-footer {
   position: relative;
-  overflow: hidden;
-  max-width: 200px;
+  padding: 20px;
 }
 
-.formulario .input-email {
-  width: 100%;
-  height: 100%;
-  background:none;
-  color: black;
-  padding-top: 20px;
+.input-clase {
+  background: none;
   border: none;
-  outline: 0px;
-
+  font-size: 15px;
+  display: block;
+  width: 98%;
+  border-bottom: 2px solid var(--first-color);
 }
 
-.formulario .lbl-nombre {
+.input-clase:focus{
+   outline: none;
+   color: var(--grey-color);
+}
+
+.label-footer {
+  color: var(--second-color);
+  position: absolute;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+  font-size: 15px;
+  left: 20px;
+  top: 10px;
+  font-family:"'Mukta', sans-serif" ;
+}
+
+
+.input-clase:focus~label,
+.input-clase:valid~label{
+  top: -14px;
+  font-size: 13px;
+  color: var(--third-color); 
+}
+
+.linea {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.linea::before{
+  content: "";
+  height: 1px;
+  width: 0%;
   position: absolute;
   bottom: 0;
+  background: var(--third-color);
+  transition: 0.3s ease width;
   left: 0;
+}
+
+.input-clase:focus ~.linea::before{
   width: 100%;
-  height: 100%;
-  pointer-events :none;
-  border-bottom: 1px solid black;
 }
 
-.formulario .lbl-nombre:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 100%;
-  border-bottom: 3px solid var(--third-color);
-  transition: all 0.3s ease;
-  transform: translateX(-100%);
-}
-
-.lbl-texto {
-  position: absolute;
-  bottom: 5px;
-  left:0;
-  transition: all 0.3s ease;
-  color: black;
-}
-
-.formulario .input-email:focus + .lbl-nombre .lbl-texto, 
-.formulario .input-email:valid + .lbl-nombre .lbl-texto{
-  transform:  translateY(-150%);
-  font-size: 15px;
-  color: var(--second-color);
-}
-
-.formulario .input-email:focus + .lbl-nombre:after,
-.formulario .input-email:valid + .lbl-nombre:after{
-  transform: translateX(0%);
-}
 
 /* BUTTON */
 
@@ -214,3 +218,4 @@ a {
   box-shadow: inset .2rem .2rem 1rem #fff,
   inset -.2rem -.2rem 1rem var(--third-color)
 }
+

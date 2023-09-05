@@ -1,20 +1,33 @@
 
+
 const Form = () => {
   return (
     <>
-    <form className="formulario">
-     <input type="text" required className="input-email"></input>
-        <label className="lbl-nombre">
-            <span className="lbl-texto">
-              Ingrese su correo electronico
-            </span>
-        </label>
+    <form id="form">
+      <div>
+
+        <div className="input-footer">
+          <input type="text" name="" id="name" required className="input-clase"></input><span className="linea"></span>
+          <label className="label-footer" >Nombre y apellido</label>
+        </div>
+
+        <div className="input-footer">
+          <input type="email" name="" id="email" required className="input-clase"></input><span className="linea"></span>
+          <label className="label-footer">Email</label>
+        </div>
+
+        <div className="input-footer">
+          <input type="password" name="" id="password" required className="input-clase"></input><span className="linea"></span>
+          <label className="label-footer">Contraseña</label>
+        </div>
+
+        <button type="submit" className="boton-pie">Suscríbete</button>
+
+      </div>
+
     </form>
 
-    <br></br>
-    <br></br>
-
-    <button type="submit" className="boton-pie">Suscribite</button>
+    
     </>
   )
 }
