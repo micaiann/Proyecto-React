@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import React from 'react'
+import Cards from "@/components/molecules/Cards"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,8 +29,8 @@ const index = () => {
         {/* HOME */}
         <div className={styles.home}></div>
 
-        {/* NEWS */}
-        <div className={styles.news}></div>
+        {/* CLASICOS */}
+        <div> <Cards/> </div>
 
         {/* CATEGORIES */}
         <div className={styles.categories}></div>
