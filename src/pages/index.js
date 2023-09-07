@@ -21,26 +21,23 @@ const index = () => {
       
       <main>
 
-        {/* NAVBAR */}
-        <div className={styles.navbar}></div>
+        {/* BARRA DE NAVEGACIÓN */}
+        <div></div>
 
-        {/* HOME */}
-        <div className={styles.home}></div>
+        {/* INICIO */}
+        <div className={styles.inicio}></div>
 
-        {/* NEWS */}
-        <div className={styles.news}></div>
+        {/* CLÁSICOS */}
+        <div></div>
 
-        {/* CATEGORIES */}
-        <div className={styles.categories}></div>
+        {/* NOVEDADES */}
+        <div></div>
 
-        {/* INFORMATION */}
-        <div className={styles.information}></div>
-
-        {/* IMAGES */}
-        <div className={styles.images}></div>
+        {/* BENEFICIOS Y LECTURA */}
+        <div></div>
 
         {/* FOOTER */}
-        <div className={styles.footer}></div>
+        <div></div>
 
       
       </main>
