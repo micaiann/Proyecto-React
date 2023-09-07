@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:wght@300;500&family=Raleway:wght@200;300&display=swap');
 
 
 
@@ -125,3 +126,146 @@ a {
   }
 } */
 
+
+
+
+
+/*******SECCION BENEFICIOS Y LECTURA********/
+
+ .section-beneficios-lectura {
+  background-color:  rgba(216, 186, 240, 150);
+ }
+
+ .h2-beneficios-lectura {
+  background-color: #e6d6f3;
+  font-size: 0.9rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  padding: 0.5rem;
+ }
+
+
+.divs-beneficios-lectura {
+  height: 130vh;
+  width: 100%;
+  background-color: #d8baf0;
+  /*font-size: 1rem*/
+}
+
+ .estilos-img-beneficios {
+  height: 9vh;
+  width: 16vw;
+  margin-left: 40vw;
+  display:flex;
+ }
+
+
+ @media (min-width: 360px) {
+   
+
+  .h2-beneficios-lectura {
+    margin-bottom: 1vh;
+  }
+   .estilos-img-beneficios {
+    padding-top: 2vh;
+   }
+
+  .estilos-h3-responsive {
+    font-size: 0.7rem;
+    text-align: center
+  }
+
+  .estilos-parrafo-responsive {
+    font-size: 0.7rem;
+    text-align: center
+  }
+
+  .div-contenedor-beneficios {
+    margin-top: 0;
+  }
+
+ }
+
+
+ @media (min-width: 768px) {
+
+  .h2-beneficios-lectura {
+    margin-bottom: 1vh;
+  }
+   .estilos-img-beneficios {
+    height: 14vh;
+    width: 11vw;
+    margin-left: 45vw;
+    padding-top: 4vh;
+   }
+
+  .h2-beneficios-lectura {
+    font-size: 1.6rem;
+  }
+
+  .estilos-h3-responsive {
+    font-size: 2rem;
+    text-align: center
+  } 
+
+  .estilos-parrafo-responsive {
+    font-size: 1.5rem;
+    text-align: center
+  }
+
+ } 
+
+ @media (min-width: 1024px) {
+
+  .h2-beneficios-lectura {
+    font-size: 1.2rem
+  }
+
+ .estilos-img-beneficios {
+    height: 10vh;
+    width: 6.5vw; 
+    margin-left: 2vw;
+  }
+
+
+  .estilos-h3-responsive {
+    font-size: 1rem;
+    width: 180px;
+    text-align: left;
+    margin-left: 1.1rem;
+    margin-top: 1rem;
+  } 
+
+  .estilos-parrafo-responsive {
+    font-size: 1rem;
+    width: 180px;
+    text-align: left;
+  }
+  
+  .divs-beneficios-lectura {
+    height: 45vh;
+    width: 100%;
+    background-color: #d8baf0;
+  }
+
+  .section-beneficios-lectura {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    background-color: #d8baf0;
+
+  }
+
+
+  .div-contenedor-beneficios {
+    height: 200px;
+    width: 200px;
+  } 
+
+  .div-grupo-imagenes {
+    display:flex;
+    flex-direction: row;
+  }
+ }
