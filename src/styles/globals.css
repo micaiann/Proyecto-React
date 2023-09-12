@@ -109,8 +109,6 @@ a {
 
 
 
-
-
 /***** SECCIÓN CLÁSICOS *****/
 .grid-card {
   display: grid;
@@ -130,7 +128,7 @@ a {
   font-size: 40px;
   font-weight: 500;
 }
-.grid-card cards {
+.grid-card products {
   grid-area: tarjetas;
 }
 
@@ -156,6 +154,7 @@ a {
 
 .card h1 {
   font-size: 20px;
+  text-align: center;
 }
 
 .card h2 {
@@ -171,6 +170,7 @@ a {
   font-size: 25px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /***Efectos hover***/
@@ -183,7 +183,31 @@ a {
 
 }
 
+/*** Shopping Cart ***/
 
+.box {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: aqua;
+}
+
+.box-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 1rem;
+}
+
+.product{
+  padding: 1rem;
+  background-color: blueviolet;
+  color: white;
+}
+
+.cart-item{
+  background-color: crimson;
+  padding: 1rem;
+  color: white;
+}
 
 
 
