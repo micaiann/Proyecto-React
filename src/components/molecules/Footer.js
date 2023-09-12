@@ -6,13 +6,13 @@ const Footer = () => {
     <>
         <footer style={pieContenedor}>
 
-            <div style={pieContenidoArriba}>
+            <div className="pie-contenido-arriba">
 
-              <div style={pieFilas}>
+              <div style={pieFilas} className="pie-filas">
                 <img src="\images\Libros-Logo.png" alt="logo-libros" width="150px"></img>
               </div>
 
-              <div style={pieFilas}>
+              <div style={pieFilas} className="pie-filas" >
                 <h4>Sobre Nosotros</h4>
                 <p>Ayuda</p>
                 <p>Servicio al cliente</p>
@@ -20,14 +20,14 @@ const Footer = () => {
                 <p>Politica de privacidad</p>
               </div>
 
-              <div style={pieFilas}>
+              <div style={pieFilas} className="pie-filas">
                 <h4>Usuario</h4>
                 <Form />
               </div>
 
-              <div style={pieFilas}>
+              <div style={pieFilas} className="pie-filas">
                 <h4>Nuestras redes</h4>
-                <div style={redesSociales}>
+                <div style={redesSociales} className="redes-sociales">
                   <a href="" target="_blank">
                     <img src="\images\twitter-logo.png" alt="logo-twitter" width="50px"></img>
                   </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                background :"black"
               }}></hr>
 
-            <div style={pieContenedorAbajo}>
+            <div style={pieContenidoAbajo} className="pie-contenido-abajo">
 
               <div style={copyright}>
                <p>@Copyright{new Date().getFullYear()}, All Rights Reserved by ClarityUI.</p>
@@ -72,37 +72,17 @@ const pieContenedor = {
   fontFamily:"'Mukta', sans-serif"
 }
 
-const pieContenidoArriba = {
-   display :"flex",
-   justifyContent: "space-around",
-   alignItems: "flex-start",
-   flexDirection: "row",
-   width: "100%",
-   textAlign : "center",
-   marginBottom : "2rem",
-}
-
-
 const pieFilas = {
-  width : "200px",
   margin: "1rem",
-  display: "flex",
-  justifyContent:"flex-start",
-  flexDirection: "column",
   color: "black",
-  alignItems: "center"
 }
 
 const redesSociales = {
-  display: "flex",
-  flexDirection: "column",
-  padding:"1rem"
+  padding:"1rem",
 }
 
-const pieContenedorAbajo = {
-  display :"flex",
-  justifyContent: "space-around",
-  marginBottom : "2rem",
+const pieContenidoAbajo = {
+  marginBottom : "1.5rem",
 
 }
 
@@ -112,5 +92,3 @@ const copyright = {
   color: "black",
   fontWeight: "600",
 }
-
-
