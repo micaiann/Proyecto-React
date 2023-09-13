@@ -24,7 +24,7 @@ const index = () => {
       <main>
 
         {/* BARRA DE NAVEGACIÓN */}
-        <div></div>
+        <div><Navbar/></div>
 
         {/* INICIO */}
         <div className={styles.inicio}></div>
