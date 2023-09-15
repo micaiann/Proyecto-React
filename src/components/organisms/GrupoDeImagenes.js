@@ -62,7 +62,6 @@ const estilosParrafo = {
   color: "#272727",
   backgroundColor: "#d8baf0",
   fontFamily: "'Mukta', sans-serif",
-  padding: "1rem",
 };
 
 const estilosDivBeneficios = {
