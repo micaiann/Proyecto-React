@@ -1,40 +1,66 @@
+import { useState, useEffect } from "react"
+import FormUser from "./FormUser"
 
 
 const Form = () => {
+
+   const [visible, setVisible] = useState(false)
+
+   const handleVisible = () => { 
+      setVisible (!visible)
+   }
+
+   useEffect(() => {
+
+      if (visible) {
+        setTimeout(() => {
+          setVisible(false)
+        }, 4000);
+      }
+
+   }, [visible]) 
+
+   const handleSubmit = (e) => {
+      e.preventDefault()
+      handleVisible()
+      
+   }
+
+
   return (
     <>
-    <form action="https://formsubmit.co/nahuel.pasayo@hotmail.com" method="POST"  className="formulario">
+    <form className="formulario" onSubmit={handleSubmit} >
       <div>
 
         <div className="input-pie-pagina">
-          <input type="text" name="" id="name" required className="input-clase"></input><span className="linea"></span>
+          <input type="text" name="Nombre" id="name" required className="input-clase"></input><span className="linea"></span>
           <label className="label-pie-pagina" >Nombre y apellido</label>
         </div>
 
         <div className="input-pie-pagina">
-          <input type="email" name="" id="email" required className="input-clase"></input><span className="linea"></span>
+          <input type="email" name="Email" id="email" required className="input-clase"></input><span className="linea"></span>
           <label className="label-pie-pagina">Email</label>
         </div>
 
         <div className="input-pie-pagina">
-          <input type="password" name="" id="password" required className="input-clase"></input><span className="linea"></span>
+          <input type="password" name="Contraseña" id="password" required className="input-clase"></input><span className="linea"></span>
           <label className="label-pie-pagina">Contraseña</label>
         </div>
+        
+        <button type="submit" className="boton-pie-pagina" >Suscríbete</button>
 
-        <button type="submit" className="boton-pie-pagina">Suscríbete</button>
+        {/** MODAL **/}
 
-        <article id="suscripcion" className="usuario">
-          <div className="usuario-contenido">
-            <article className="caja-contenido">
-              <h3>Te has suscripto satisfactoriamente</h3>
-              <img src="\images\check2.gif" alt="verificacion" width="100"></img>
-            </article>
-          </div>
-        </article>
+        {
+            visible 
+            ? (<FormUser />)
+            : null
+        }
 
       </div>
 
     </form>
+
     </>
   )
 }
