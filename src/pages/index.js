@@ -27,7 +27,7 @@ const index = () => {
         <div><Navbar/></div>
 
         {/* INICIO */}
-        <div className={styles.inicio}></div>
+        <div style={{height:"150vh",}}></div>
 
         {/* CLÁSICOS */}
         <div></div>
