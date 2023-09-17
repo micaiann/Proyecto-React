@@ -23,7 +23,11 @@ const Form = () => {
    const handleSubmit = (e) => {
       e.preventDefault()
       handleVisible()
-      
+
+      fetch("https://formsubmit.co/ajax/nahuel.pasayo@hotmail.com", {
+        method:"POST",
+        body: new FormData(e.target),
+      })
    }
 
 
