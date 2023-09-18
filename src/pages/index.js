@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Navbar from '@/components/molecules/Navbar'
-import { useState } from "react";
+
  
 
 
@@ -12,9 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 
 const index = () => {
-  const [allProducts, setAllProducts] = useState([]);
-	const [total, setTotal] = useState(0);
-	const [countProducts, setCountProducts] = useState(0);
+  
   return (
     <>
       <Head>
@@ -28,28 +25,6 @@ const index = () => {
       
       <main>
 
-        {/* BARRA DE NAVEGACIÓN */}
-        <div><Navbar allProducts={allProducts}
-				setAllProducts={setAllProducts}
-				total={total}
-				setTotal={setTotal}
-				countProducts={countProducts}
-				setCountProducts={setCountProducts}/></div>
-
-        {/* INICIO */}
-        <div className={styles.inicio}></div>
-
-        {/* CLÁSICOS */}
-        <div></div>
-
-        {/* NOVEDADES */}
-        <div></div>
-
-        {/* BENEFICIOS Y LECTURA */}
-        <div></div>
-
-        {/* FOOTER */}
-        <div></div>
       
       </main>
     </>
