@@ -229,13 +229,6 @@
 }
 
 
-.home {
-  height: 100vh;
-  width: 100%;
-  background-image: url(/images/Libros-Home.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 .news {
   width: 100%;
