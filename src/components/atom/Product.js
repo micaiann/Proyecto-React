@@ -15,7 +15,7 @@ const Product = ({ imageSource, title, price, id, addToCart }) => {
       />
       <h1>{title}</h1>
       <h2>${price}</h2>
-      <button onClick={() => addToCart(id)}>Agregar</button>
+      <button onClick={() => addToCart(id)}>Añadir</button>
     </div>
   );
 }
