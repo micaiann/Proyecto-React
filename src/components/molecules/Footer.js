@@ -56,9 +56,71 @@ const Footer = () => {
               </div>
 
             </div>
-
-         
         </footer>
+
+        <style jsx>{`
+
+          // MEDIAQUERY
+
+          // MOBILE
+
+          @media (min-width: 360px) {
+            .pie-contenido-arriba {
+              display: flex;
+              flex-direction: column;
+              text-align: center; 
+          
+            }
+          
+            .pie-filas {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          
+            .redes-sociales {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            }
+          
+            .pie-contenido-abajo{
+              display: flex;
+              justify-content: space-around;
+            }
+          }
+
+          // TABLETS
+
+          @media (min-width: 768px) {
+            .pie-contenido-arriba {
+              flex-direction: row;
+              margin-bottom: 2rem;
+              justify-content: space-around;
+            }
+          
+            .pie-filas {
+              width: 200px;
+            } 
+          
+            .pie-contenido-abajo {
+              margin-bottom: 2rem;
+            } 
+          } 
+
+          // PC
+
+          @media (min-width: 1024px) {
+
+            .pie-contenido-arriba { 
+              align-items: flex-start;
+            } 
+          }  
+
+        `}
+        </style>
+
+
     </>
   )
 }
@@ -92,3 +154,7 @@ const copyright = {
   color: "black",
   fontWeight: "600",
 }
+
+
+
+
