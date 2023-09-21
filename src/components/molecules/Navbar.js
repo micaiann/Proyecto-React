@@ -35,7 +35,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div className='cart-icon' onClick={() => setActive(!active)}>
-        <a href='#' className='cart'><img src='./images/cart_1.png' /></a>
+        
 
       </div>
       
