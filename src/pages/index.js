@@ -1,12 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
-
-
-const inter = Inter({ subsets: ['latin'] })
-
-
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
+import React from "react";
+import ShoppingCart from "../components/organisms/ShoppingCart";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 const index = () => {
   return (
@@ -18,22 +15,21 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      
       <main>
-
         {/* BARRA DE NAVEGACIÓN */}
         <div></div>
 
         {/* INICIO */}
-        <div className={styles.inicio}></div>
+        <div className={styles.inicio}> </div>
 
         {/* CLÁSICOS */}
-        <div></div>
+        <div> <ShoppingCart/> </div>
+
 
         {/* NOVEDADES */}
         <div></div>
 
-        {/* BENEFICIOS Y LECTURA */}
+        {/* BENEFICIOS DE LECTURA */}
         <div></div>
 
         {/* FOOTER */}
@@ -42,7 +38,7 @@ const index = () => {
       
       </main>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;
