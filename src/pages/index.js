@@ -1,11 +1,29 @@
+<<<<<<< HEAD
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import React from "react";
 import ShoppingCart from "../components/organisms/ShoppingCart";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
+=======
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
+
+
+
+
+
+
+const inter = Inter({ subsets: ['latin'] })
+
+
+>>>>>>> navbar
+
 
 const index = () => {
+  
   return (
     <>
       <Head>
@@ -15,6 +33,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+<<<<<<< HEAD
       <main>
         {/* BARRA DE NAVEGACIÓN */}
         <div></div>
@@ -35,6 +54,12 @@ const index = () => {
         {/* FOOTER */}
         <div></div>
 
+=======
+
+      
+      <main>
+        
+>>>>>>> navbar
       
       </main>
     </>
