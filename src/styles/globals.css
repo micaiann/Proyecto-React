@@ -95,12 +95,12 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+*/
 a {
   color: inherit;
   text-decoration: none;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -135,6 +135,7 @@ a {
   height: 40px;
   stroke: black;
   float: right;
+  
 }
 
 .icon-cart:hover {
@@ -309,3 +310,213 @@ a {
   height: 44px;
   transition: all 0.1s ease-out;
 }
+/***********************NAVBAR********************/
+ 
+.nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  height: 12%;
+  width: 100%;
+  background-color:#A4C4BF;
+  z-index:99995 ;
+}
+.logo >img {
+  height: 80px;
+  padding: 0.5rem;
+  
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style:none ;
+  gap: 3rem;
+  margin-right: 5% ;
+}
+.nav_item:hover {
+  color: gray;
+  
+}
+a {
+  font-family: var(--first-font);
+  font-size: larger;
+}
+.nav_item>a {
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav_toggle {
+  display: none;
+}
+
+/*************NAVBAR MEDIAQUERIES***************/
+
+@media screen and (min-width: 200px) and (max-width:768px) {
+  .nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 12%;
+    background-color:#A4C4BF;
+    z-index:99995 ;
+    
+  }
+  
+  .nav_menu {
+    position: absolute;
+    top:12vh;
+    left: 0;
+    width: 50%;
+    height: 60vh;
+    background-color: #A4C4BF;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+    
+  }
+.nav_menu.open {
+  transform: translateX(0%) !important;
+}
+  .nav_toggle {
+    display: flex !important;
+    flex-direction:column;
+    margin: 25px;
+  }
+  .nav_toggle.open >span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav_toggle.open >span:nth-child(2) {
+    display: none;
+  }
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+  .nav_toggle span {
+    width:30px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 12%;
+    background-color:#A4C4BF;
+    
+  }
+  
+  .nav_menu {
+    position: absolute;
+    top:12vh;
+    
+    left: 0;
+    gap: 2rem;
+    padding: 1%; 
+    width: 50%;
+    height: 60vh;
+    background-color: #A4C4BF;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+.nav_menu.open {
+  transform: translateX(0%) !important;
+}
+  .nav_toggle {
+    display: flex !important;
+    flex-direction:column;
+    margin: 20px;
+  }
+  .nav_toggle.open >span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav_toggle.open >span:nth-child(2) {
+    display: none;
+  }
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+  .nav_toggle span {
+    width:30px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+
+
+}
+
+@media (max-width:800px) and (orientation: landscape) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 12vw;
+    background-color:#A4C4BF;
+    
+  }
+  
+  .nav_menu {
+    position: absolute;
+    top:12vw;
+    width: 50%;
+    height: 80vh;
+    background-color: #A4C4BF;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: 0.3s ease all;
+  }
+.nav_menu.open {
+  transform: translateX(0%) !important;
+}
+  .nav_toggle {
+    display: flex !important;
+    flex-direction:column;
+    margin: 20px;
+  }
+  .nav_toggle.open >span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+  .nav_toggle.open >span:nth-child(2) {
+    display: none;
+  }
+  .nav_toggle.open > span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+  .nav_toggle span {
+    width:30px;
+    height: 4px;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    transform-origin: 5px 0px;
+    transition: all 0.2s linear;
+  }
+  
+
+} 

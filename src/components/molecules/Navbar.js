@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -32,10 +33,7 @@ const Navbar = () => {
           <a href='#' className='nav_link'>Contacto</a>
         </li>
       </ul>
-      <div className='cart_container'>
-        <a href='#' className='cart'><img src='./images/cart_1.png' /></a>
-      </div>
-
+    
     </nav>
   )
 }

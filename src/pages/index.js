@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import React from "react";
 import ShoppingCart from "../components/organisms/ShoppingCart";
 import { Inter } from "next/font/google";
+import Navbar from "@/components/molecules/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 const index = () => {
@@ -17,7 +18,7 @@ const index = () => {
 
       <main>
         {/* BARRA DE NAVEGACIÓN */}
-        <div></div>
+        <div><Navbar/></div>
 
         {/* INICIO */}
         <div className={styles.inicio}> </div>
