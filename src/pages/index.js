@@ -29,7 +29,6 @@ const index = () => {
         {/* CLÁSICOS */}
         <div> <ShoppingCart/> </div>
 
-
         {/* NOVEDADES */}
         <div></div>
 
