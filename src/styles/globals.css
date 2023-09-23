@@ -20,17 +20,6 @@
 
 
 
-* {
-  box-sizing: border-box;
-  padding:0;
-  margin: 0;
-}
-
- html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-} 
 
 
 
@@ -460,4 +449,119 @@ a {
     transform-origin: 5px 0px;
     transition: all 0.2s linear;
   }
+}
+
+/********** PIE DE PÁGINA ***********/
+
+/**** FORMULARIO PIE DE PÁGINA ****/
+
+/** BOTÓN **/
+
+.boton-pie-pagina{
+  background-color: transparent;
+  font-weight: semibold ;
+  color: black;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border: 2px solid var(--white-color);
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: .5rem .5rem 1rem var(--third-color),
+  -.5rem -.5rem 1rem #fff
+
+}
+
+.boton-pie-pagina:hover {
+  box-shadow: .5rem .5rem 1rem #fff,
+  -.5rem -.5rem 1rem var(--third-color)
+}
+
+.boton-pie-pagina:active {
+  box-shadow: inset .2rem .2rem 1rem #fff,
+  inset -.2rem -.2rem 1rem var(--third-color)
+}
+
+
+/** INPUT **/
+
+.input-pie-pagina {
+  position: relative;
+  padding: 20px;
+}
+
+.input-clase {
+  background: none;
+  border: none;
+  font-size: 15px;
+  display: block;
+  width: 98%;
+  border-bottom: 2px solid var(--first-color);
+  cursor: pointer;
+}
+
+.input-clase:focus{
+   outline: none;
+   color: var(--grey-color);
+}
+
+.label-pie-pagina {
+  color: var(--second-color);
+  position: absolute;
+  transition: 0.5s ease-in-out all;
+  pointer-events: none;
+  font-size: 15px;
+  left: 20px;
+  top: 10px;
+  font-family:"'Mukta', sans-serif" ;
+}
+
+.input-clase:focus~label,
+.input-clase:valid~label{
+  top: -14px;
+  font-size: 13px;
+  color: var(--third-color); 
+}
+
+.linea {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.linea::before{
+  content: "";
+  height: 1px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  background: var(--third-color);
+  transition: 0.3s ease width;
+  left: 0;
+}
+
+.input-clase:focus ~.linea::before{
+  width: 100%;
+}
+
+/**  SUSCRIPCIÓN **/
+
+.caja-usuario {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  background-color: rgba(0, 0, 0, 0.8);
+} 
+
+
+.caja-contenido {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 12rem;
+  color: var(--white-color);
 }

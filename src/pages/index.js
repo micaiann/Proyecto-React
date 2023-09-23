@@ -1,10 +1,11 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import React from "react";
-import ShoppingCart from "../components/organisms/ShoppingCart";
-import { Inter } from "next/font/google";
-import Navbar from "@/components/molecules/Navbar";
-const inter = Inter({ subsets: ["latin"] });
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
+
+
+const inter = Inter({ subsets: ['latin'] })
+
 
 
 const index = () => {
@@ -19,24 +20,27 @@ const index = () => {
       </Head>
 
       <main>
-        {/* BARRA DE NAVEGACIÓN */}
-        <div><Navbar/></div>
 
-        {/* INICIO */}
-        <div className={styles.inicio}> </div>
+        {/* NAVBAR */}
+        <div className={styles.navbar}></div>
 
-        {/* CLÁSICOS */}
-        <div> <ShoppingCart/> </div>
+        {/* HOME */}
+        <div className={styles.home}></div>
 
+        {/* NEWS */}
+        <div className={styles.news}></div>
 
-        {/* NOVEDADES */}
-        <div></div>
+        {/* CATEGORIES */}
+        <div className={styles.categories}></div>
 
-        {/* BENEFICIOS DE LECTURA */}
-        <div></div>
+        {/* INFORMATION */}
+        <div className={styles.information}></div>
+
+        {/* IMAGES */}
+        <div className={styles.images}></div>
 
         {/* FOOTER */}
-        <div></div>
+        <div className={styles.footer}></div>
 
       
       </main>
