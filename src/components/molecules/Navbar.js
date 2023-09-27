@@ -60,7 +60,7 @@ const Navbar = () => {
               Contacto
             </a>
           </li>
-          <li className="nav_item">
+          </ul>
             <div
               className="container-icon"
               onClick={() => setShowCart(!showCart)}
@@ -72,8 +72,8 @@ const Navbar = () => {
                 </span>
               </div>
             </div>
-          </li>
-        </ul>
+          
+        
       </nav>
       <div>
         {showCart ? <Cart cart={cart} deleteFromCart={deleteFromCart} /> : null}
