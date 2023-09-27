@@ -4,14 +4,12 @@ import React from "react";
 import ShoppingCart from "../components/organisms/ShoppingCart";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/molecules/Navbar";
-import Footer from '@/components/molecules/Footer';
-import GrupoDeImagenes from '@/components/organisms/GrupoDeImagenes'
+import Footer from "@/components/molecules/Footer";
+import GrupoDeImagenes from "@/components/organisms/GrupoDeImagenes";
+import BooksContextProvider from "@/context/BooksContextProvider";
 const inter = Inter({ subsets: ["latin"] });
 
-
-
 const index = () => {
-  
   return (
     <>
       <Head>
@@ -21,34 +19,44 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        {/* BARRA DE NAVEGACIÓN */}
-        <div><Navbar/></div>
-
-        {/* INICIO */}
-        <div className={styles.inicio}> </div>
-
-        {/* CLÁSICOS */}
-        <div> <ShoppingCart/> </div>
-
-        {/* NOVEDADES */}
-        <div></div>
-
-        {/* BENEFICIOS Y LECTURA */}
-        <div>
-        <h2 className='h2-beneficios-lectura'>La lectura como un estilo de vida</h2>
-        <section className='section-beneficios-lectura'>
-          <div className='divs-beneficios-lectura'>
-          <GrupoDeImagenes/>
+      <BooksContextProvider>
+        <header>
+          {/* BARRA DE NAVEGACIÓN */}
+          <div>
+            <Navbar />
           </div>
-        </section>
-        </div>
+        </header>
 
-        {/* FOOTER */}
-        <div><Footer /></div>
+        <main>
+          {/* INICIO */}
+          <div className={styles.inicio}> </div>
 
+          {/* CLÁSICOS */}
+          <div>
+            <ShoppingCart />
+          </div>
 
-      </main>
+          {/* BENEFICIOS Y LECTURA */}
+          <div>
+            <h2 className="h2-beneficios-lectura">
+              La lectura como un estilo de vida
+            </h2>
+            <section className="section-beneficios-lectura">
+              <div className="divs-beneficios-lectura">
+                <GrupoDeImagenes />
+              </div>
+            </section>
+          </div>
+        </main>
+
+        <footer>
+          {/* FOOTER */}
+          <div>
+            {" "}
+            <Footer />{" "}
+          </div>
+        </footer>
+      </BooksContextProvider>
     </>
   );
 };

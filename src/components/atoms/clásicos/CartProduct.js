@@ -1,5 +1,5 @@
 
-const CartItem = ({ item, cart, deleteFromCart }) => {
+const CartItem = ({ item, deleteFromCart }) => {
   /*Destructurando item */
   const { title, price, id, quantity } = item;
 
@@ -8,12 +8,10 @@ const CartItem = ({ item, cart, deleteFromCart }) => {
       <div className="container-cart-products">
         <div className="cart-product">
           <div className="info-cart-product">
-            <span className="count-product-cart">{quantity}</span>
+            <span className="count-product-cart">Cant. {quantity}</span>
             <p className="title-product-cart">{title}</p>
             <span className="price-product-cart">$ {price * quantity}</span>
-          </div>
-
-          <svg
+            <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -28,7 +26,9 @@ const CartItem = ({ item, cart, deleteFromCart }) => {
               d="M6 18L18 6M6 6l12 12"
             />
           </svg>
-        </div>
+          </div>
+
+             </div>
       </div>
     </>
   );

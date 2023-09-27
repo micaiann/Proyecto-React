@@ -1,5 +1,5 @@
 import React from "react";
-import CartProduct from "../atom/CartProduct";
+import CartProduct from "../atoms/clásicos/CartProduct";
 
 const Cart = ({ cart, deleteFromCart }) => {
   return (
