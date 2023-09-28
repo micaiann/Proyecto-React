@@ -32,7 +32,7 @@ const index = () => {
           <div className={styles.inicio}> </div>
 
           {/* CLÁSICOS */}
-          <div className="cards_container">
+          <div>
             <ShoppingCart />
           </div>
 
