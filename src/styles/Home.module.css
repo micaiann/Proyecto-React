@@ -1,6 +1,5 @@
 
 
-
   .card h2 {
     margin-bottom: 0.5rem;
   }
@@ -93,9 +92,18 @@
   background-image: url(/images/Libros-Home.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  
+}
+.inicio >h2 {
+  font-size:70px;
+  font-weight: 100;
+  position: relative;
+  left: 40%;
+  top: 40%;
+  
 }
 
-@media screen and (min-width: 200px) and (max-width:768px) {
+@media screen and (min-width: 200px) and (max-width:768px) {  
   .inicio {
     height: 100vh;
     width: 100vw;
@@ -104,9 +112,15 @@
     background-repeat: no-repeat;
     
   }
-
+  .inicio >h2 {
+    font-size:15px;
+    font-weight: 50;
+    position: relative;
+    left: 75%;
+    top: 15%;
+    
 }
-
+  }
 @media screen and (min-width: 768px) and (max-width:1024px) {
 
 .inicio {
@@ -117,8 +131,16 @@
   background-repeat: no-repeat;
  
 }
+
+.inicio >h2 {
+  font-size:60px;
+  font-weight: 50;
+  position: relative;
+  left: 40%;
+  top: 40%;
+  
 }
 
-
+  }
 
 

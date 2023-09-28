@@ -21,7 +21,9 @@
 /*** Reset ***/
 * {box-sizing: border-box;
   padding: 0;
-  margin: 0 ;}
+  margin: 0 ;
+font-family: var(--first-font);}
+  
 
 /*** Carrito ***/
 
@@ -233,7 +235,7 @@ a {
   align-content: center;
   height: 12%;
   width: 100%;
-  background-color: #A4C4BF;
+  background-color: #ffffff;
   z-index:99995 ;
   top:0;
 }
@@ -279,7 +281,6 @@ a {
     justify-content: space-between;
     align-content: center;
     height: 12%;
-    background-color:#A4C4BF;
     z-index:99995 ;
     
   }
@@ -290,7 +291,7 @@ a {
     left: 0;
     width: 50%;
     height: 60vh;
-    background-color: #A4C4BF;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     transform: translateX(-100%);
@@ -341,20 +342,19 @@ a {
     justify-content: space-between;
     align-content: center;
     height: 12%;
-    background-color:#A4C4BF;
+
     
   }
   
   .nav_menu {
     position: absolute;
     top:12vh;
-    
+    background-color: #ffffff;
     left: 0;
     gap: 2rem;
     padding: 1%; 
     width: 50%;
     height: 60vh;
-    background-color: #A4C4BF;
     display: flex;
     flex-direction: column;
     transform: translateX(-100%);
@@ -397,7 +397,7 @@ a {
     justify-content: space-between;
     align-content: center;
     height: 12vw;
-    background-color:#A4C4BF;
+    
     
   }
   
@@ -406,7 +406,7 @@ a {
     top:12vw;
     width: 50%;
     height: 80vh;
-    background-color: #A4C4BF;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     transform: translateX(-100%);
@@ -959,7 +959,7 @@ a {
   position: relative;
   background-color: #A4C4BF;
   width: 100vw;
-  height: 110vh;
+  height: 90vh;
   
   
 }
@@ -981,3 +981,8 @@ a {
     
   }
    }
+
+
+
+   
+   

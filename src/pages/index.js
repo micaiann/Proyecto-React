@@ -30,7 +30,8 @@ const index = () => {
 
         <main>
           {/* INICIO */}
-          <div className={styles.inicio}> </div>
+          <div className={styles.inicio}>
+            <h2>Leer hace bien.</h2> </div>
 
           {/* CLÁSICOS */}
           <div>
