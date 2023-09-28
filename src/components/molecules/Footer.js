@@ -1,3 +1,4 @@
+import { Content } from "next/font/google"
 import Form from "../atoms/footer/Form"
 
 
@@ -13,11 +14,13 @@ const Footer = () => {
               </div>
 
               <div style={pieFilas} className="pie-filas" >
-                <h4>Sobre Nosotros</h4>
+              <h4>Sobre Nosotros</h4>
+              <div className="pie-filas-nosotros">
                 <p>Ayuda</p>
                 <p>Servicio al cliente</p>
                 <p>Detalles envíos</p>
                 <p>Politica de privacidad</p>
+              </div>
               </div>
 
               <div style={pieFilas} className="pie-filas">
@@ -44,9 +47,10 @@ const Footer = () => {
        
 
              <hr style={{
-               width: "90%",
-               height :"2px",
-               background :"black"
+              height :"3px",
+              background :"black",
+              marginLeft:"4rem",
+              marginRight: "4rem"
               }}></hr>
 
             <div style={pieContenidoAbajo} className="pie-contenido-abajo">
@@ -68,14 +72,19 @@ const Footer = () => {
             .pie-contenido-arriba {
               display: flex;
               flex-direction: column;
-              text-align: center; 
-          
+              text-align: center;
             }
           
             .pie-filas {
               display: flex;
               flex-direction: column;
               align-items: center;
+            }
+
+            .pie-filas-nosotros {
+              display: flex;
+              flex-direction: column;
+              padding: 1rem;
             }
           
             .redes-sociales {
@@ -98,6 +107,7 @@ const Footer = () => {
               margin-bottom: 2rem;
               justify-content: space-around;
             }
+
           
             .pie-filas {
               width: 200px;
@@ -131,20 +141,24 @@ const pieContenedor = {
   backgroundColor : "white",
   border: "2px solid black",
   borderRadius: "10px",
-  fontFamily:"'Mukta', sans-serif"
+  fontFamily:"'Mukta', sans-serif",
+  marginLeft:"0.1rem",
+  marginRight: "0.1rem",
+  marginBottom:"0.2rem"
 }
 
 const pieFilas = {
   margin: "1rem",
   color: "black",
+  paddingTop: "1rem"
 }
 
 const redesSociales = {
-  padding:"1rem",
+  padding:"2rem",
 }
 
 const pieContenidoAbajo = {
-  marginBottom : "1.5rem",
+  marginBottom : "2rem",
 
 }
 
@@ -153,6 +167,7 @@ const copyright = {
   lineHeight: "15px",
   color: "black",
   fontWeight: "600",
+  marginTop: "1rem"
 }
 
 
