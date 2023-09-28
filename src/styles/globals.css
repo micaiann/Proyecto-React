@@ -947,7 +947,9 @@ a {
 .carousel-images {
   height: 400px;
   width: 250px;
-  margin-left: 25%;
+  position: relative;
+  left: 40%;
+  
 }
 
 .carousel-images >img {
@@ -955,10 +957,10 @@ a {
 }
 .carousel-container{
   position: relative;
-  left: 15%;
   background-color: #A4C4BF;
-  width: 100vh;
+  width: 100vw;
   height: 110vh;
+  
   
 }
 .global-carousel {
@@ -969,3 +971,13 @@ a {
   font-family: var(--first-font);
 }
 
+@media screen and (min-width: 300px) and (max-width:768px)
+{
+  .carousel-images {
+    height: 400px;
+    width: 250px;
+    position: relative;
+    left: 20%;
+    
+  }
+   }
