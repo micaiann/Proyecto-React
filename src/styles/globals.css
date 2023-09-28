@@ -631,6 +631,7 @@ a {
 .input-pie-pagina {
   position: relative;
   padding: 20px;
+  margin-top: 0.2rem;
 }
 
 .input-clase {
@@ -661,7 +662,7 @@ a {
 
 .input-clase:focus~label,
 .input-clase:valid~label{
-  top: -14px;
+  top: -5px;
   font-size: 13px;
   color: var(--third-color); 
 }
