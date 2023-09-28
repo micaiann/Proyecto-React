@@ -26,13 +26,7 @@
 /*** Carrito ***/
 
 /* ShoppingCart */
-.container-global {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: flex-end;
-  padding: 30px 0 40px 0;
-}
+
 
 .container-icon {
   position: relative;
@@ -165,9 +159,9 @@
   height: 434px;
 }
 
-.grid-card h1 {
+.grid-card  h1 {
   grid-area: titulo;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--first-font);
   font-size: 40px;
   font-weight: 500;
 }
@@ -485,6 +479,10 @@ a {
     margin-bottom: 1vh;
   }
    .estilos-img-beneficios {
+    height: 9vh;
+    width: 12vw;
+    margin-left: 44vw;
+    display:flex;
     padding-top: 2vh;
    }
 
@@ -500,6 +498,7 @@ a {
   }
 
   .div-contenedor-beneficios {
+    
     margin-top: 0;
   }
 
@@ -519,20 +518,20 @@ a {
    }
 
   .h2-beneficios-lectura {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 
   .estilos-h3-responsive {
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center
   } 
 
   .estilos-parrafo-responsive {
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center
   }
   .divs-beneficios-lectura {
-    height: 180vh;
+    height: 140vh;
     width: 100%;
     background-color: #d8baf0;
   }
@@ -545,17 +544,10 @@ a {
     font-size: 1.2rem
   }
 
- .estilos-img-beneficios {
-    height: 10vh;
-    width: 6.5vw; 
-    margin-left: 2vw;
-  }
-
-
   .estilos-h3-responsive {
     font-size: 1rem;
     width: 180px;
-    text-align: left;
+    text-align: center;
     margin-left: 1.1rem;
     margin-top: 1rem;
   } 
@@ -563,7 +555,7 @@ a {
   .estilos-parrafo-responsive {
     font-size: 1rem;
     width: 180px;
-    text-align: left;
+    text-align: center;
     margin: 1rem
   }
   
@@ -587,11 +579,17 @@ a {
     height: 200px;
     width: 200px;
     margin: auto;
+    
   } 
 
   .div-grupo-imagenes {
     display:flex;
     flex-direction: row;
+  }
+  .estilos-img-beneficios {
+    height: 13vh;
+    width: 6vw;
+    margin-left: 32%;
   }
  }
 
@@ -687,6 +685,9 @@ a {
 
 .input-clase:focus ~.linea::before{
   width: 100%;
+}
+.pie-filas {
+  row-gap: 3px;
 }
 
 /**  SUSCRIPCIÓN **/
@@ -863,6 +864,10 @@ a {
   }
   
   @media screen and (min-width: 768px) and (max-width:1024px) {
+.cards_container {
+  height: 70vh;
+
+    }
     
 .grid-card {
   display: grid;

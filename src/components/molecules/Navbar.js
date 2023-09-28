@@ -66,7 +66,7 @@ const Navbar = () => {
               onClick={() => setShowCart(!showCart)}
             >
               <CartIcon />
-              <div class="count-products">
+              <div className="count-products">
                 <span id="count-products-reduce">
                   {cart.reduce((acum, item) => acum + item.quantity, 0)}
                 </span>
