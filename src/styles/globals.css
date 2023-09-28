@@ -152,11 +152,11 @@
   grid-template-areas:
     "titulo titulo titulo titulo"
     "tarjetas tarjetas tarjetas tarjetas";
-  grid-template-rows: 42px 382px;
+  grid-template-rows: 60px 382px;
   justify-items: center;
   gap: 10px;
   width: 100%;
-  height: 434px;
+  height: 500px;
 }
 
 .grid-card  h1 {
@@ -164,7 +164,7 @@
   font-family: var(--first-font);
   font-size: 40px;
   font-weight: 500;
-}
+    }
 .grid-card products {
   grid-area: tarjetas;
 }
@@ -691,9 +691,7 @@ a {
 .input-clase:focus ~.linea::before{
   width: 100%;
 }
-.pie-filas {
-  row-gap: 3px;
-}
+
 
 /**  SUSCRIPCIÓN **/
 
@@ -943,3 +941,31 @@ a {
   
   }
  
+
+  /********CAROUSEL*********/
+  /******/
+.carousel-images {
+  height: 400px;
+  width: 250px;
+  margin-left: 25%;
+}
+
+.carousel-images >img {
+  object-fit: cover;
+}
+.carousel-container{
+  position: relative;
+  left: 15%;
+  background-color: #A4C4BF;
+  width: 100vh;
+  height: 110vh;
+  
+}
+.global-carousel {
+  background-color: #A4C4BF;
+  
+}
+.global-carousel >h2 {
+  font-family: var(--first-font);
+}
+

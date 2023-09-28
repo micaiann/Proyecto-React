@@ -85,6 +85,8 @@ const Footer = () => {
               display: flex;
               flex-direction: column;
               padding: 1rem;
+              row-gap: 3px;
+              
             }
           
             .redes-sociales {

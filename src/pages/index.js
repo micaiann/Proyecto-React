@@ -7,6 +7,7 @@ import Navbar from "@/components/molecules/Navbar";
 import Footer from "@/components/molecules/Footer";
 import GrupoDeImagenes from "@/components/organisms/GrupoDeImagenes";
 import BooksContextProvider from "@/context/BooksContextProvider";
+import NextJsCarousel from "@/components/molecules/Carousel";
 const inter = Inter({ subsets: ["latin"] });
 
 const index = () => {
@@ -35,6 +36,9 @@ const index = () => {
           <div>
             <ShoppingCart />
           </div>
+
+           {/* NOVEDADES */}
+        <div><NextJsCarousel/></div>
 
           {/* BENEFICIOS Y LECTURA */}
           <div>
