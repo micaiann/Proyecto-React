@@ -113,11 +113,11 @@
     
   }
   .inicio >h2 {
-    font-size:15px;
+    font-size: 15px;
     font-weight: 50;
     position: relative;
-    left: 75%;
-    top: 15%;
+    left: 75%; 
+    top: 95%;
     
 }
   }

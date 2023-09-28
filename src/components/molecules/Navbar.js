@@ -41,22 +41,22 @@ const Navbar = () => {
 
         <ul className={`nav_menu  ${isOpen && "open"}`}>
           <li className="nav_item">
-            <a href="#" className="nav_link">
+            <a href="#Inicio" className="nav_link">
               Inicio
             </a>
           </li>
           <li className="nav_item">
-            <a href="#" className="nav_link">
+            <a href="#Libros" className="nav_link">
               Libros
             </a>
           </li>
           <li className="nav_item">
-            <a href="#" className="nav_link">
-              Nosotros
+            <a href="#Informacion" className="nav_link">
+              Información
             </a>
           </li>
           <li className="nav_item">
-            <a href="#" className="nav_link">
+            <a href="#Contacto" className="nav_link">
               Contacto
             </a>
           </li>

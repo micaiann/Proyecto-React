@@ -30,19 +30,25 @@ const index = () => {
 
         <main>
           {/* INICIO */}
-          <div className={styles.inicio}>
+          <div className={styles.inicio} id="Inicio">
             <h2>Leer hace bien.</h2> </div>
+         
 
           {/* CLÁSICOS */}
+          <div id="Libros" ></div>
           <div>
             <ShoppingCart />
           </div>
+          
 
            {/* NOVEDADES */}
-        <div><NextJsCarousel/></div>
+          <div>
+          <NextJsCarousel/>
+          </div>
+         
 
           {/* BENEFICIOS Y LECTURA */}
-          <div>
+          <div id="Informacion">
             <h2 className="h2-beneficios-lectura">
               La lectura como un estilo de vida
             </h2>
@@ -52,13 +58,14 @@ const index = () => {
               </div>
             </section>
           </div>
+        
+
         </main>
 
         <footer>
           {/* FOOTER */}
-          <div>
-            {" "}
-            <Footer />{" "}
+          <div id="Contacto">
+            <Footer />
           </div>
         </footer>
       </BooksContextProvider>
