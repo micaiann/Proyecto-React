@@ -679,7 +679,7 @@ a {
 
 .linea::before{
   content: "";
-  height: 1px;
+  height: 2px;
   width: 0%;
   position: absolute;
   bottom: 0;

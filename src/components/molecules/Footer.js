@@ -142,7 +142,6 @@ export default Footer
 const pieContenedor = {
   backgroundColor : "white",
   border: "2px solid black",
-  borderRadius: "10px",
   fontFamily:"'Mukta', sans-serif",
   marginLeft:"0.1rem",
   marginRight: "0.1rem",

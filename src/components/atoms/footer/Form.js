@@ -15,7 +15,7 @@ const Form = () => {
       if (visible) {
         setTimeout(() => {
           setVisible(false)
-        }, 4000);
+        }, 2000);
       }
 
    }, [visible]) 
