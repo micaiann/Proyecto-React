@@ -288,6 +288,7 @@ a {
     justify-content: space-between;
     align-content: center;
     height: 12%;
+    width: 100%;
     z-index: 99995;
 
   }
@@ -356,6 +357,7 @@ a {
     justify-content: space-between;
     align-content: center;
     height: 12%;
+    width: 100%;
 
 
   }
@@ -417,6 +419,7 @@ a {
     justify-content: space-between;
     align-content: center;
     height: 12vw;
+    width: 100%;
 
 
   }
@@ -1003,7 +1006,7 @@ a {
 
 
 
-@media screen and (min-width: 300px) and (max-width:600px) {
+@media screen and (min-width: 300px) and (max-width:768px) {
   .global-carousel >h2 {
     font-size: 25px;
   }
@@ -1027,7 +1030,7 @@ a {
   }
 }
 
-@media screen and (min-width: 600px) and (max-width:1024px) {
+@media screen and (min-width: 768px) and (max-width:1024px) {
 
 
   .carousel-container {
