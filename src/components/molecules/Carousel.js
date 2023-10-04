@@ -7,7 +7,7 @@ export default class NextJsCarousel extends Component {
 		return (
 			<div className='global-carousel'>
 			<h2 style={{textAlign:"center"}}>Novedades</h2>
-            <br></br>
+            
 			<Carousel className='carousel-container'  >
 				<div className='carousel-images'>
 					<img src="../images/book4.jpg"   alt="image1"/>
