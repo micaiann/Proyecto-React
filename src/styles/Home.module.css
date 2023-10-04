@@ -92,12 +92,13 @@
   background-image: url(/images/Libros-Home.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  z-index: 1;
   
 }
 .inicio >h2 {
   font-size:70px;
   font-weight: 100;
-  position: relative;
+  position: absolute;
   left: 40%;
   top: 40%;
   
@@ -115,7 +116,7 @@
   .inicio >h2 {
     font-size: 15px;
     font-weight: 50;
-    position: relative;
+    position: absolute;
     left: 75%; 
     top: 95%;
     
@@ -135,7 +136,7 @@
 .inicio >h2 {
   font-size:60px;
   font-weight: 50;
-  position: relative;
+  position: absolute;
   left: 40%;
   top: 40%;
   
