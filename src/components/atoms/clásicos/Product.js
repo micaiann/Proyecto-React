@@ -31,6 +31,7 @@ const Product = ({ imageSource, title, price, id, addToCart }) => {
         />
         <h1>{title}</h1>
         <h2>${price}</h2>
+        <button className={styles["add"]}>Añadir</button>
       </div>
 
       {modal && (
@@ -49,7 +50,7 @@ const Product = ({ imageSource, title, price, id, addToCart }) => {
             />
             <h1>{title}</h1>
             <h2>${price}</h2>
-            <button className={styles["add"]} onClick={() => addToCart(id)}>Añadir</button>
+            <button className={styles["add"]} onClick={() => addToCart(id)}>Añadir al Carrito</button>
           </div>
         </div>
       )}
