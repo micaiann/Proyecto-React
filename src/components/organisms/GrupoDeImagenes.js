@@ -7,7 +7,7 @@ const dataBeneficiosLectura = [
     id: 1,
     imagen: '/images/brain-removebg-preview.png',
     altText: 'brainlogo',
-    titulo:"Aumenta la inteligencia",
+    titulo:"Aumenta la cognición",
     texto:"Además de la destreza lectora, la inteligencia también se evidencia en la forma no verbal como expresión y en el uso del pensamiento abstracto.",
 },
 
@@ -46,7 +46,7 @@ const dataBeneficiosLectura = [
 
 
 const estilosImagen = {
-  backgroundColor: "#d8baf0",
+  backgroundColor: "#e6d6f3",
   color: "grey",
   height: "50px",
   width: "40px"
@@ -54,18 +54,18 @@ const estilosImagen = {
 
 const estilosh3 = {
   color: "#272727",
-  backgroundColor: "#d8baf0",
+  backgroundColor: "#e6d6f3",
   fontFamily: "'Raleway', sans-serif",
 };
 
 const estilosParrafo = {
   color: "#272727",
-  backgroundColor: "#d8baf0",
+  backgroundColor: "#e6d6f3",
   fontFamily: "'Mukta', sans-serif",
 };
 
 const estilosDivBeneficios = {
-  backgroundColor: "#d8baf0"
+  backgroundColor: "#e6d6f3"
 };
 
 const GrupoDeImagenes = () => {
