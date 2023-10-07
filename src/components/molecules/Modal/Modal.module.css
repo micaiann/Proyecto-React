@@ -1,0 +1,84 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(211, 230, 216, 0.8);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add {
+    width: 150px;
+    height: 40px;
+    background-color: rgba(211, 230, 216, 0.8);
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .add:hover {
+    font-weight: bold;
+    background-color: rgba(211, 230, 216, 1);
+    width: 210px;
+    height: 44px;
+    transition: all 0.1s ease-out;
+    transform: scale(1.1);
+  }
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    
+}
+
+.modal {
+    z-index: 10000;
+    display: grid;
+    place-items: center;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600px;   
+    max-width: 800px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 7px 7px;
+    font-size: 24px;
+}
